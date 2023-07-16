@@ -20,10 +20,10 @@ export let fetchFailure = (error) => {
     }
 }
 
-export const fetchData = () => {
+export const fetchData = () => { //data fetching using fetch method
     return async (dispatch) => {
         try{
-            const response = await fetch('https://reqres.in/api/users?page=2');
+            const response = await fetch('https://reqres.in/api/users?page=2'); 
             const data = await response.json();
             console.log('fetch',data.data);
 

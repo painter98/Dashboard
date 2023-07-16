@@ -1,12 +1,13 @@
 import { FETCH_POST_FAILURE,FETCH_POST_FROM_API,FETCH_POST_SUCCESS } from "../actions/actionType";
 
-let initialState = {
+let initialState = { //initial state of state variables
     loading:false,
     error:'',
     data:[]
 }
 
-export const ImageReducer = (state=initialState,action) => {
+export const ImageReducer = (state=initialState,action) => { //actions needs to be done and the current state
+
   switch(action.type){
     case FETCH_POST_FROM_API:
         return {
