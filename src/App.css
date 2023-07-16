@@ -1,0 +1,64 @@
+.heading{
+  font-size: 40px;
+  text-align: center;
+}
+
+.list{
+  display: flex;
+  flex-flow: wrap;
+  gap:3vw;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.card{
+  border:2px solid black;
+  border-radius: 2rem;
+  position:relative;
+}
+
+.image{
+  width:350px;
+  height:300px;
+  margin:1.5rem;
+  border-radius: 2rem;
+}
+
+.index{
+  position: absolute;
+  right:-10px;
+  top:-20px;
+  width:35px;
+  height:20px;
+  padding:0.5vw 0;
+  text-align: center;
+  background-color: black;
+  border-radius:50%;
+  color:white;
+}
+
+li p{
+  text-align: center;
+}
+
+.search{
+  padding:1vw;
+  width:94%;
+  border:2px solid black;
+  margin:3vw;
+  border-radius: 1vw;
+}
+
+@media (max-width:800px){
+  .index{
+    top:0;
+  }
+}
+
+@media (max-width:400px){
+  .image{
+    width:300px;
+    height:250px;
+  }
+}
